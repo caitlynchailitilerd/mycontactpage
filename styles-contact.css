@@ -1,0 +1,209 @@
+/*This is my 201 Contact Web Page Project using Eric Meyer's reset at the top of my page -- your CSS starts on line 56 */
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* ---------- This is the beginning of my 201 Contact Web Page Project ------------ */
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-image:url("images/flower_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;	
+  text-align: center; 
+  /*this helps move the logo to the middle of the page */
+}
+
+.center {
+    width: 50%; /* this is for responsiveness */
+	min-width: 250px; /* this is for responsiveness */
+
+	padding: 1%;
+    margin: 2px auto;
+ 	background: rgba(193, 226, 224, 0.7); /*this uses opacity for the text box background color*/
+
+	
+	text-align: center;
+
+	/* border: 4px dashed white; This is the code that puts the dashed white line around the text box*/ 
+
+	border-radius: 50px 50px 50px 50px;
+	/* this code rounds the edges of the text box */
+
+	/* ------------ this is where the fade animation STARTS ------------ */
+	animation: fadeIn 5s; 
+	-webkit-animation: fadeIn 5s;
+	-moz-animation: fadeIn 5s;
+	-o-animation: fadeIn 5s;
+	-ms-animation: fadeIn 5s;
+}
+	@keyframes fadeIn {
+		0% { opacity: 0;}
+		100% { opacity: 1;}
+	}
+	@-moz-keyframes fadeIn {
+		0% { opacity: 0;}
+		100% { opacity: 1;}
+	}
+
+	@-webkit-keyframes fadeIn {
+		0% { opacity: 0;}
+		100% { opacity: 1;}
+	}
+	@-o-keyframes fadeIn {
+		0% { opacity: 0;}
+		100% { opacity: 1;}
+	}
+	@-ms-keyframes fadeIn {
+		0% { opacity: 0;}
+		100% { opacity: 1;}
+	}
+/* --------------- this is the END of the fadeIn code ----------------------*/
+
+
+   
+#logo {
+    width:20%;  
+	/* this creates responsiveness when interacting with the computer */
+	margin-top: 70px;
+	/* this helps add space at the top of the picture */ 
+	margin-bottom: 16px;
+	/* border: 3px dashed red; we are getting rid of the border*/
+	text-align: center;
+}
+
+h1 {
+	/* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+	font-family: "barlow-condensed", sans-serif;
+	font-weight: 800;
+	font-style: normal;
+	font-size: 2em;
+    margin: 25px auto 10px auto;
+    color: #135545;
+	letter-spacing: .15em;
+}
+
+h2 {
+	 /* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+	font-family: "barlow-condensed", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 1.5em;
+    line-height: 1.4;
+    color: #2e8e7b;
+    padding: 0px 0px;
+    margin: 15px 5px 25px 5px;
+}
+
+p {
+	/* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+	font-family: "barlow-condensed", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.2em;
+    line-height: 1.6;
+    color: #227464;
+	letter-spacing: .2em;
+	margin: 40px auto 0px auto;
+}
+
+nav { 
+	
+	font-family: "barlow-condensed", sans-serif;
+	font-size: 1.2em;
+
+	width: 60%; /* this will create responsiveness */	
+	margin: 0 auto; /* this centers the entire nav element inside the center div */
+
+	/* border: dashed turquoise;
+	this adds colored dashes around the text box */
+
+	border-width: 3px 0;
+	/* this adds 3 pixel border on top and bottom of the nav element, and 0 which eliminates the left and right sides of the border */
+
+	text-align: center;
+	margin-top: 2em;
+}
+
+nav li{
+	display: inline;
+	}
+
+nav a{
+	display: inline-block;
+	padding: 10px;
+	}
+
+a{
+	/*this code controls the font color */
+	color: #1e6c63;
+	text-decoration: none; 
+	font-weight: bold;
+	letter-spacing: .1em;
+	}
+
+a:hover{
+	/* this code controls the hovering color */
+	color: #135545;
+	background: rgb(175, 217, 196);
+	}
+
+    
+
+    
+
